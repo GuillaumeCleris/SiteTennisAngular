@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { PlanningRoutingModule } from './planning-routing.module';
 import { PlanningHomeComponent } from './planning-home/planning-home.component';
+import { CalendarComponent } from './calendar/calendar.component';
 
 
 @NgModule({
   declarations: [
-    PlanningHomeComponent
+    PlanningHomeComponent,
+    CalendarComponent
   ],
   imports: [
     CommonModule,

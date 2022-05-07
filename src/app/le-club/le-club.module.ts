@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { LeClubRoutingModule } from './le-club-routing.module';
 import { LeClubHomeComponent } from './le-club-home/le-club-home.component';
+import { ClassDirective } from './le-club-home/class.directive';
 
 
 @NgModule({
   declarations: [
-    LeClubHomeComponent
+    LeClubHomeComponent,
+    ClassDirective
   ],
   imports: [
     CommonModule,

@@ -1,2 +1,3 @@
 @import 'semantic-ui-css/semantic.css';
-@import 'fomantic-ui-css/fomantic.css';
+@import 'fomantic-ui-css/semantic.min.css';
+@import 'bootstrap/dist/css/bootstrap.css';
