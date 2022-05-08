@@ -10,34 +10,34 @@ export class LeClubHomeComponent implements OnInit {
 
   images = [
     {
-      title: 'At the Beach',
+      title: 'Le club',
       url: 'assets/images/autre_vue.jpg'
 
     },
 
     {
-      title: 'At the Mountain',
+      title: 'Les courts',
       url: 'assets/images/courts.JPG'
     },
 
     {
-      title: 'At the City',
+      title: 'Le local',
       url: 'assets/images/long_club.png'
     },
 
     {
-      title: 'At the Country Side',
+      title: 'Le court n°1',
       url: 'assets/images/small_terrain.png'
     },
 
     {
-      title: 'At the Beach',
+      title: 'Le court n°5',
       url: 
       'assets/images/tennis-7.jpg'
     },
 
     {
-      title: 'At the Mountain',
+      title: 'Le court n°3',
       url: 
       'assets/images/terrain2.png'
     }
