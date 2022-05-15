@@ -1,6 +1,9 @@
 <div class="ui container">
   <div class="ui secondary pointing menu">
     <a routerLink="/" class="item">WIIMblEdon</a>
+    <ng-container *ngIf="signedin$ | async">
+      <a routerLink="/profil" routerLinkActive="active" class="ui item">Profil</a>
+    </ng-container>
     <a routerLink="/planning" routerLinkActive="active" class="ui item">Planning</a>
     <a routerLink="/tournois" routerLinkActive="active" class="ui item">Tournois</a>
     <a routerLink="/classement" routerLinkActive="active" class="ui item">Classement</a>

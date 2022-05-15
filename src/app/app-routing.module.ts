@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { SigninComponent } from './auth/signin/signin.component';
 import { SignoutComponent } from './auth/signout/signout.component';
+import { AuthGuard } from './auth/auth.guard';
 const routes: Routes = [
   { 
     path:'home', 
@@ -34,6 +35,12 @@ const routes: Routes = [
     path:'auth', 
     loadChildren: () => 
       import('./auth/auth.module').then((m) => m.AuthModule) 
+  },
+  { 
+    path:'profil', 
+    canLoad:[AuthGuard],
+    loadChildren: () => 
+      import('./Profil/profil.module').then((m) => m.ProfilModule) 
   },
   { path: '', component: HomeComponent},
   { path: '**', component: NotFoundComponent}
