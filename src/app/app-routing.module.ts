@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-
+import { SigninComponent } from './auth/signin/signin.component';
+import { SignoutComponent } from './auth/signout/signout.component';
 const routes: Routes = [
   { 
     path:'home', 
@@ -28,6 +29,11 @@ const routes: Routes = [
     path:'le-club', 
     loadChildren: () => 
       import('./le-club/le-club.module').then((m) => m.LeClubModule) 
+  },
+  { 
+    path:'signin', 
+    loadChildren: () => 
+      import('./auth/auth.module').then((m) => m.AuthModule) 
   },
   { path: '', component: HomeComponent},
   { path: '**', component: NotFoundComponent}
