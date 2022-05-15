@@ -2,3 +2,100 @@
 @import 'fomantic-ui-css/semantic.min.css';
 @import 'bootstrap/dist/css/bootstrap.css';
 @import "../node_modules/angular-calendar/css/angular-calendar.css";
+
+/* You can add global styles to this file, and also import other style files */
+
+
+
+.ngtt-se__container {
+    background-color: #2b3e50;
+    display: inline-block;
+}
+.ngtt-se__match-component-container {
+    display: flex;
+    height: 100px;
+    width: 350px;
+    background-color: transparent;
+}
+.ngtt-se__bracket-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+.ngtt-se__round-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.ngtt-se__match-wrapper {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    height: 100px;
+    width: 268px;
+    padding: 15px 25px;
+    position: relative;
+}
+.ngtt-se__match-wrapper::after {
+    display: flex;
+    flex-grow: 1;
+    right: 0;
+    position: absolute;
+    width: 25px;
+    height: 50%;
+    border-right: 2px solid goldenrod;
+    content: '';
+}
+.ngtt-se__match-wrapper::before {
+    display: flex;
+    flex-grow: 1;
+    left: 0;
+    top: 50%;
+    position: absolute;
+    width: 25px;
+    border-top: 2px solid goldenrod;
+    content: '';
+}
+.ngtt-se__match-wrapper:nth-child(odd)::after {
+    top: 50%;
+    border-top-right-radius: 0;
+    border-top: 2px solid goldenrod;
+}
+.ngtt-se__match-wrapper:nth-child(even)::after {
+    top: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: 2px solid goldenrod;
+}
+.ngtt-se__match-wrapper:first-child:last-child::after {
+    display: none;
+}
+.ngtt-se__round-wrapper:first-child > .ngtt-se__match-wrapper::before {
+    display: none;
+}
+.ngtt-se__finale-match-wrapper {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 130px;
+    width: 400px;
+    padding: 15px 25px;
+    position: relative;
+}
+.ngtt-se__finale-match-wrapper > .ngtt-se__finale-component-container {
+    display: block;
+    height: 100px;
+    width: 350px;
+    background-color: transparent;
+    margin-bottom: 30px;
+}
+.ngtt-se__finale-match-wrapper::before {
+    display: flex;
+    flex-grow: 1;
+    left: 0;
+    top: 50%;
+    position: absolute;
+    width: 25px;
+    border-top: 2px solid goldenrod;
+    content: '';
+}
+

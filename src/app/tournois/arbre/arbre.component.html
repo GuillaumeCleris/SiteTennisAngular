@@ -1,0 +1,12 @@
+<h1 style="color: white; width: 100%; text-align: center">
+  Single Elimination Example
+</h1>
+
+
+<ngtt-single-elimination-tree [tournament]="singleEliminationTournament"
+[matchTemplate]="matchTemplate"></ngtt-single-elimination-tree>
+
+
+<ng-template #matchTemplate let-match>
+<app-match [match]="match"></app-match>
+</ng-template>

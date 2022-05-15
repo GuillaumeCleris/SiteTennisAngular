@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-
+import {Component, OnInit} from '@angular/core';
 export interface NgttTournament {
   rounds: NgttRound[];
 }
@@ -14,11 +13,11 @@ export interface NgttRound {
 }
 
 @Component({
-  selector: 'app-tournois-home',
-  templateUrl: './tournois-home.component.html',
-  styleUrls: ['./tournois-home.component.css']
+  selector: 'app-arbre',
+  templateUrl: './arbre.component.html',
+  styleUrls: ['./arbre.component.css']
 })
-export class TournoisHomeComponent implements OnInit {
+export class ArbreComponent implements OnInit {
 
   public singleEliminationTournament !: NgttTournament;
   
@@ -118,6 +117,3 @@ export class TournoisHomeComponent implements OnInit {
   }
 
 }
-
-
-  
