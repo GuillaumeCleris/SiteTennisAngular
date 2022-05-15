@@ -1,25 +1,22 @@
 <div class="ui container">
   <div class="ui secondary pointing menu">
     <a routerLink="/" class="item">WIIMblEdon</a>
-    <a routerLink="/home" routerLinkActive="active" class="item">Home</a>
-    <a routerLink="/planning" routerLinkActive="active" class="item">Planning</a>
-    <a routerLink="/tournois" routerLinkActive="active" class="item">Tournois</a>
-    <a routerLink="/classement" routerLinkActive="active" class="item">Classement</a>
-    <a routerLink="/le-club" routerLinkActive="active" class="item">Le Club</a>
+    <a routerLink="/home" routerLinkActive="active" class="ui item">Home</a>
+    <a routerLink="/planning" routerLinkActive="active" class="ui item">Planning</a>
+    <a routerLink="/tournois" routerLinkActive="active" class="ui item">Tournois</a>
+    <a routerLink="/classement" routerLinkActive="active" class="ui item">Classement</a>
+    <a routerLink="/le-club" routerLinkActive="active" class="ui item">Le Club</a>
     <div class="right menu">
       <ng-container *ngIf="signedin$ | async">
-        <a class="ui item" routerLink="/inbox" routerLinkActive="active">
-          Inbox
-        </a>
-        <a class="ui item" routerLink="/signout" routerLinkActive="active">
+        <a class="ui item" routerLink="/auth/signout" routerLinkActive="active">
           Sign Out
         </a>
       </ng-container>
       <ng-container *ngIf="!(signedin$ | async)">
-      <a class="ui item" routerLink="/" routerLinkActive="active">
+      <a class="ui item" routerLink="/auth" routerLinkActive="active">
         Sign In
       </a>
-      <a class="ui item" routerLink="/signup" routerLinkActive="active">
+      <a class="ui item" routerLink="/auth/signup" routerLinkActive="active">
         Sign Up
       </a>
       </ng-container>

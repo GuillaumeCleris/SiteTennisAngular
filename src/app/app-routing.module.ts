@@ -31,7 +31,7 @@ const routes: Routes = [
       import('./le-club/le-club.module').then((m) => m.LeClubModule) 
   },
   { 
-    path:'signin', 
+    path:'auth', 
     loadChildren: () => 
       import('./auth/auth.module').then((m) => m.AuthModule) 
   },
