@@ -26,6 +26,9 @@
   
 
   <div>
-    <h4 appClass [backgroundColor]="'red'" >{{ images[currentPage].title }}</h4>
-      <img [src]="images[currentPage].url" />
+    <h4 appClass [backgroundColor]="'red'" style="text-align: center" >{{ images[currentPage].title }}</h4>
+      <img [src]="images[currentPage].url" style="width : 500px; display: block;
+      margin-left: auto;
+      margin-right: auto;
+      height : 300px;" />
   </div>
