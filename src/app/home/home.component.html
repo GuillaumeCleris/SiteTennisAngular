@@ -19,11 +19,13 @@
 
 <br/>
 
-<div style=" width: 100%; text-align: center">
-<button class="ui submit button primary" routerLink="/auth" routerLinkActive="active">
-Sign In
-</button>
-<button class="ui submit button primary" routerLink="/auth/signup" routerLinkActive="active">
-Sign Up
-</button>
-</div>
+<ng-container *ngIf="!(signedin$ | async)">
+    <div style=" width: 100%; text-align: center">
+    <button class="ui submit button primary" routerLink="/auth" routerLinkActive="active">
+    Sign In
+    </button>
+    <button class="ui submit button primary" routerLink="/auth/signup" routerLinkActive="active">
+    Sign Up
+    </button>
+    </div>
+</ng-container>
